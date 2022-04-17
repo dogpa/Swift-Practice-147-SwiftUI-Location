@@ -11,6 +11,8 @@
 		2D7E6A67280AFC49004FD063 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E6A66280AFC49004FD063 /* ContentView.swift */; };
 		2D7E6A69280AFC4B004FD063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D7E6A68280AFC4B004FD063 /* Assets.xcassets */; };
 		2D7E6A6C280AFC4B004FD063 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D7E6A6B280AFC4B004FD063 /* Preview Assets.xcassets */; };
+		2D7E6A73280B048C004FD063 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E6A72280B048C004FD063 /* LocationViewModel.swift */; };
+		2D7E6A75280B15B6004FD063 /* PinItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E6A74280B15B6004FD063 /* PinItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		2D7E6A66280AFC49004FD063 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2D7E6A68280AFC4B004FD063 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D7E6A6B280AFC4B004FD063 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2D7E6A72280B048C004FD063 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		2D7E6A74280B15B6004FD063 /* PinItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				2D7E6A64280AFC49004FD063 /* Swift_Practice_147_SwiftUI_LocationApp.swift */,
 				2D7E6A66280AFC49004FD063 /* ContentView.swift */,
+				2D7E6A72280B048C004FD063 /* LocationViewModel.swift */,
+				2D7E6A74280B15B6004FD063 /* PinItem.swift */,
 				2D7E6A68280AFC4B004FD063 /* Assets.xcassets */,
 				2D7E6A6A280AFC4B004FD063 /* Preview Content */,
 			);
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D7E6A67280AFC49004FD063 /* ContentView.swift in Sources */,
+				2D7E6A73280B048C004FD063 /* LocationViewModel.swift in Sources */,
 				2D7E6A65280AFC49004FD063 /* Swift_Practice_147_SwiftUI_LocationApp.swift in Sources */,
+				2D7E6A75280B15B6004FD063 /* PinItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +280,7 @@
 				DEVELOPMENT_TEAM = D758S53U98;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "是否提供地理位置資訊？可在設定中變更。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +310,7 @@
 				DEVELOPMENT_TEAM = D758S53U98;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "是否提供地理位置資訊？可在設定中變更。";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

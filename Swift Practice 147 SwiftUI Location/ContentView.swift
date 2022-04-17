@@ -5,12 +5,22 @@
 //  Created by Dogpa's MBAir M1 on 2022/4/16.
 //
 
+import MapKit
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var locationVM = LocationViewModel()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        Map(coordinateRegion: $locationVM.region, showsUserLocation: true, userTrackingMode: .constant(.follow), annotationItems: locationVM.pinList) { item in
+            MapMarker(coordinate: item.coordinate, tint: .red)
+        }
+            .ignoresSafeArea()
+            .accentColor(.cyan)
+            .onAppear {
+                locationVM.checkIfLocationServicesIsEnabled()
+            }
+            
     }
 }
 
